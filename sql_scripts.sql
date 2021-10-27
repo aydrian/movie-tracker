@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS "Stub" (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  title STRING NOT NULL,
+  show_date TIMESTAMPTZ NOT NULL,
+  price DECIMAL DEFAULT 0.00
+);

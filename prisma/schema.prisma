@@ -11,8 +11,8 @@ generator client {
 }
 
 model Stub {
-  id        Int      @id @default(autoincrement())
+  id        String   @id @default(uuid())
   title     String   @db.VarChar(255)
-  showDate  DateTime
+  show_date DateTime
   price     Decimal
 }
